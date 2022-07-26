@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/stijn301/portfolio/static/css/main.1455e46c.css",
+    "main.js": "/stijn301/portfolio/static/js/main.4f724540.js",
+    "index.html": "/stijn301/portfolio/index.html",
+    "main.1455e46c.css.map": "/stijn301/portfolio/static/css/main.1455e46c.css.map",
+    "main.4f724540.js.map": "/stijn301/portfolio/static/js/main.4f724540.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1455e46c.css",
+    "static/js/main.4f724540.js"
+  ]
+}
