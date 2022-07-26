@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+
+import Footer from "./components/sections/Footer";
+import Header from "./components/sections/Header";
+import ProjectsView from "./components/views/ProjectsView";
+import HomeView from "./components/views/HomeView";
 
 function App() {
+  const [currentView, setCurrentView] = useState("Home");
+
+  function ViewInProjects(projectTitle = "") {
+    setCurrentView({name: "Projects", projectTitle: projectTitle})
+  }
+
+  // Select active view
+  let view = <HomeView onNavProjects={() => setCurrentView("Projects")} onViewInProjects={(project, title) => ViewInProjects(project, title)} />
+
+  if(currentView == "Projects") {
+    view = <ProjectsView />
+
+  } else if(currentView.name == "Projects") {
+    view = <ProjectsView projectTitle={currentView.projectTitle} />
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="min-h-screen flex flex-col text-neutral-200">
+        <Header onNavHome={() => setCurrentView("Home")} onNavProjects={() => setCurrentView("Projects")} />
+
+        <main className="flex-1 flex flex-col">
+          {view}
+        </main>
+
+        <Footer/>
+      </div>
     </div>
   );
 }
