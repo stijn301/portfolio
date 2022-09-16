@@ -3,7 +3,7 @@ export default function InteractiveGravityProject() {
     <div className="flex flex-col items-center text-lg">
 
       <div className="max-w-3xl">
-        <img src="/images/InteractiveGravity.png" alt="" />
+        <img src="/build/images/InteractiveGravity.png" alt="" />
       </div>
 
       <div className="p-6">

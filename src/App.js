@@ -15,10 +15,10 @@ function App() {
   // Select active view
   let view = <HomeView onNavProjects={() => setCurrentView("Projects")} onViewInProjects={(project, title) => ViewInProjects(project, title)} />
 
-  if(currentView == "Projects") {
+  if(currentView === "Projects") {
     view = <ProjectsView />
 
-  } else if(currentView.name == "Projects") {
+  } else if(currentView.name === "Projects") {
     view = <ProjectsView projectTitle={currentView.projectTitle} />
   }
 

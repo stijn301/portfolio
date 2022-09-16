@@ -54,6 +54,10 @@ export default function ProjectsView(props) {
       case "Interactive Gravity":
         project = <InteractiveGravityProject />
         break;
+
+      default:
+        project = null
+        break;
     }
 
     setCurrentModal(project)

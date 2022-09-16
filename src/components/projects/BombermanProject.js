@@ -3,7 +3,7 @@ export default function BombermanProject() {
     <div className="flex flex-col items-center text-lg">
 
       <div className="max-w-3xl">
-        <img src="/images/Bomberman1.png" alt="" />
+        <img src="/build/images/Bomberman1.png" alt="" />
       </div>
 
       <div className="p-6">

@@ -26,7 +26,7 @@ export default function SmartdoelenProject() {
         </div>
 
         <div className="w-3/5 flex-shrink-0">
-          <img src="/images/Smartdoelen2.png" alt="CRUD system for goals" />
+          <img src="/build/images/Smartdoelen2.png" alt="CRUD system for goals" />
         </div>
       </div>
 
@@ -36,7 +36,7 @@ export default function SmartdoelenProject() {
         </div>
 
         <div className="w-3/5 flex-shrink-0">
-          <img src="/images/Smartdoelen3.png" alt="View for selecting new goals" />
+          <img src="/build/images/Smartdoelen3.png" alt="View for selecting new goals" />
         </div>
       </div>
 
